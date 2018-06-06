@@ -5,21 +5,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { BannerHostDirective } from './banner-host.directive';
 import { AdModule } from './ad/ad.module';
+import { DynamicComponentHostDirective } from './dynamic-component-host.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BannerHostDirective
+    DynamicComponentHostDirective
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
-    AppRoutingModule,
-    // AdModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

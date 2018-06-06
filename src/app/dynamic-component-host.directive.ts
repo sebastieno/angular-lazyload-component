@@ -2,9 +2,9 @@ import { Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
-  selector: '[bannerHost]'
+  selector: '[dynamicComponentHost]'
 })
-export class BannerHostDirective {
+export class DynamicComponentHostDirective {
 
   constructor(public viewContainerRef: ViewContainerRef) { }
 
